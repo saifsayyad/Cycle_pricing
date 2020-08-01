@@ -4,11 +4,11 @@ This is a command line Application, which is used to generate the Bill of a Cycl
 
 It uses 10 ``Threads`` to perform the operation and a blocking ``Queue``
 
-This application also supports the configuration of Price for each part according to bill date. [Click here](#Price) to see how
+This application also supports the configuration of Price for each part according to bill date. [Click here](#Price) to see how.
 
 ## Arguments
 
-This application support following commands
+The application supports following commands.
 * ``--configfile [json file path]``
 * ``--availableparts``
 
@@ -41,12 +41,12 @@ Below is example of input ``JSON`` structure.
 ```json
 [
   {
-    "bill_date": "DD.MM.YYYY",
-    "frame": "select from options ...",
-    "handle": "select from options ...",
-    "seat": "select from options ...",
-    "wheel": "select from options ...",
-    "chain": "select from options ...",
+    "bill_date": "22.02.2005",
+    "frame": "Steel",
+    "handle": "Steel",
+    "seat": "RacingSeat",
+    "wheel": "Tubeless",
+    "chain": "SixGears"
   },
   {
     "bill_date": "DD.MM.YYYY",
@@ -87,7 +87,7 @@ Following is the diectory structure where all ``.ini`` files are stored.
 ```
 
 ### INI file structure:
-Each ``.ini`` file is configures as per below example
+Each ``.ini`` file is configured as below example.
 ```ini
 [22.02.2000-10.10.2010]
 Price=700
@@ -97,9 +97,9 @@ Price=650
 Each main section contains the range of date in ``DD.MM.YYYY`` format,
 Price of each part is decided by bill date.
 
-> **_NOTE:_**  The ``latest`` keyword in date range is replace by ``current system date`` and then used further.
+> **_NOTE:_**  The ``latest`` keyword in date range is replaced by ``current system date`` and then used further.
 
-## JSON schema for reference:
+## INput JSON schema for reference:
 
 ```json
 {
