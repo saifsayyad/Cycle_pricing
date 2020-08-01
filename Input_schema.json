@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "array",
+    "additionalItems": true,
+    "items": {
+        "$id": "#/items",
+        "anyOf": [
+            {
+                "$id": "#/items/anyOf/0",
+                "type": "object",
+                "description": "This sections contains Configuration for each Cycle",
+                "required": [
+                    "bill_date",
+                    "frame",
+                    "handle",
+                    "seat",
+                    "wheel",
+                    "chain"
+                ],
+                "properties": {
+                    "bill_date": {
+                        "$id": "#/items/anyOf/0/properties/bill_date",
+                        "type": "string",
+                        "title": "The bill_date",
+                        "description": "bill_date should always be in DD.MM.YYYY format"
+                    },
+                    "frame": {
+                        "$id": "#/items/anyOf/0/properties/frame",
+                        "type": "string",
+                        "title": "The frame",
+                        "description": "Type of frame"
+                    },
+                    "handle": {
+                        "$id": "#/items/anyOf/0/properties/handle",
+                        "type": "string",
+                        "title": "The handle",
+                        "description": "Type of handle"
+                    },
+                    "seat": {
+                        "$id": "#/items/anyOf/0/properties/seat",
+                        "type": "string",
+                        "title": "The seat",
+                        "description": "Type of seat"
+                    },
+                    "wheel": {
+                        "$id": "#/items/anyOf/0/properties/wheel",
+                        "type": "string",
+                        "title": "The wheel",
+                        "description": "Type of wheel"
+                    },
+                    "chain": {
+                        "$id": "#/items/anyOf/0/properties/chain",
+                        "type": "string",
+                        "title": "The chain",
+                        "description": "Type of chain"
+                    }
+                },
+                "additionalProperties": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite errors="0" failures="0" name="pytest" skipped="0" tests="4" time="0.473">
+    <testcase classname="test.test_cycle" file="test/test_cycle.py" line="19" name="test_cycle_valid_out" time="0.005">
+        <system-err>2020-08-01 14:42:30,468 - Cycle_Pricing - INFO -
+            ---------------------------------------------------------
+            2020-08-01 14:42:30,468 - Cycle_Pricing - INFO - Date: 2005-02-22 00:00:00
+            2020-08-01 14:42:30,469 - Cycle_Pricing - INFO - Frame Steel: 100
+            2020-08-01 14:42:30,469 - Cycle_Pricing - INFO - Handle Steel: 80
+            2020-08-01 14:42:30,469 - Cycle_Pricing - INFO - Seating RacingSeat: 89
+            2020-08-01 14:42:30,469 - Cycle_Pricing - INFO - Wheels Tubeless: 185
+            2020-08-01 14:42:30,469 - Cycle_Pricing - INFO - Chain SixGears: 700
+            2020-08-01 14:42:30,469 - Cycle_Pricing - INFO - Total: 1154
+            2020-08-01 14:42:30,469 - Cycle_Pricing - INFO - ---------------------------------------------------------
+        </system-err>
+    </testcase>
+    <testcase classname="test.test_cycle" file="test/test_cycle.py" line="57" name="test_cycle_invalid_out"
+              time="0.381">
+        <system-err>2020-08-01 14:42:30,831 - Cycle_Pricing - ERROR - Please verify input file! &apos;frame&apos; is a
+            required property
+
+            Failed validating &apos;required&apos; in schema[0]:
+            {&apos;$id&apos;: &apos;#/items/anyOf/0&apos;,
+            &apos;additionalProperties&apos;: True,
+            &apos;description&apos;: &apos;This sections contains Configuration for each Cycle&apos;,
+            &apos;properties&apos;: {&apos;bill_date&apos;: {&apos;$id&apos;: &apos;#/items/anyOf/0/properties/bill_date&apos;,
+            &apos;description&apos;: &apos;bill_date should always &apos;
+            &apos;be in DD.MM.YYYY format&apos;,
+            &apos;title&apos;: &apos;The bill_date&apos;,
+            &apos;type&apos;: &apos;string&apos;},
+            &apos;chain&apos;: {&apos;$id&apos;: &apos;#/items/anyOf/0/properties/chain&apos;,
+            &apos;description&apos;: &apos;Type of chain&apos;,
+            &apos;title&apos;: &apos;The chain&apos;,
+            &apos;type&apos;: &apos;string&apos;},
+            &apos;frame&apos;: {&apos;$id&apos;: &apos;#/items/anyOf/0/properties/frame&apos;,
+            &apos;description&apos;: &apos;Type of frame&apos;,
+            &apos;title&apos;: &apos;The frame&apos;,
+            &apos;type&apos;: &apos;string&apos;},
+            &apos;handle&apos;: {&apos;$id&apos;: &apos;#/items/anyOf/0/properties/handle&apos;,
+            &apos;description&apos;: &apos;Type of handle&apos;,
+            &apos;title&apos;: &apos;The handle&apos;,
+            &apos;type&apos;: &apos;string&apos;},
+            &apos;seat&apos;: {&apos;$id&apos;: &apos;#/items/anyOf/0/properties/seat&apos;,
+            &apos;description&apos;: &apos;Type of seat&apos;,
+            &apos;title&apos;: &apos;The seat&apos;,
+            &apos;type&apos;: &apos;string&apos;},
+            &apos;wheel&apos;: {&apos;$id&apos;: &apos;#/items/anyOf/0/properties/wheel&apos;,
+            &apos;description&apos;: &apos;Type of wheel&apos;,
+            &apos;title&apos;: &apos;The wheel&apos;,
+            &apos;type&apos;: &apos;string&apos;}},
+            &apos;required&apos;: [&apos;bill_date&apos;, &apos;frame&apos;, &apos;handle&apos;, &apos;seat&apos;,
+            &apos;wheel&apos;, &apos;chain&apos;],
+            &apos;type&apos;: &apos;object&apos;}
+
+            On instance:
+            {&apos;bill_date&apos;: &apos;22.02.2005&apos;,
+            &apos;chain&apos;: &apos;SixGears&apos;,
+            &apos;handle&apos;: &apos;Steel&apos;,
+            &apos;seat&apos;: &apos;RacingSeat&apos;,
+            &apos;wheel&apos;: &apos;Tubeless&apos;}
+        </system-err>
+    </testcase>
+    <testcase classname="test.test_components_price.test_components"
+              file="test/test_components_price/test_components.py" line="41"
+              name="test_components_price[in_config0-expected0]" time="0.003"></testcase>
+    <testcase classname="test.test_components_price.test_components"
+              file="test/test_components_price/test_components.py" line="41"
+              name="test_components_price[in_config1-expected1]" time="0.002"></testcase>
+</testsuite>
