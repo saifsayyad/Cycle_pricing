@@ -36,10 +36,7 @@ This argument expects a ``JSON`` file path.
 
 Below is example of input ``JSON`` structure.
 
----
-***NOTE***
-*The date should always be given in "DD.MM.YYYY" format*
----
+> **_NOTE:_**  *The date should always be given in "DD.MM.YYYY" format*
 
 ```json
 [
@@ -58,8 +55,7 @@ Below is example of input ``JSON`` structure.
     "seat": "select from options ...",
     "wheel": "select from options ...",
     "chain": "select from options ...",
-  },
-  ...
+  }
 ]
 ```
 
@@ -100,10 +96,8 @@ Price=650
 ```
 Each main section contains the range of date in ``DD.MM.YYYY`` format,
 Price of each part is decided by bill date.
----
-***NOTE***
-The ``latest`` keyword in date range is replace by ``current system date`` and then used futher
----
+
+> **_NOTE:_**  The ``latest`` keyword in date range is replace by ``current system date`` and then used further.
 
 ## JSON schema for reference:
 
@@ -171,3 +165,4 @@ The ``latest`` keyword in date range is replace by ``current system date`` and t
     }
 }
 ```
+
